@@ -1,0 +1,1 @@
+Please download [NYT10](https://drive.google.com/open?id=1jt_yurHorliIor8uDqvirQlGyFYwW81c) and unzip the file here.
