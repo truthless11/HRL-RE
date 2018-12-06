@@ -6,7 +6,7 @@
 # E-mail: keavilzhangzty@gmail.com, truthless11@gmail.com
 ############################################################
 
-import random, sys, time
+import random, sys, time, os
 import torch
 from DataManager import DataManager
 from Model import Model
@@ -56,6 +56,8 @@ def work(mode, train_data, test_data, dev_data, model, args, sampleround, epoch)
 
 if __name__ == "__main__":
     torch.manual_seed(1)
+    if not os.path.exists('checkpoints'):
+        os.mkdir('checkpoints')
 
     argv = sys.argv[1:]
     parser = Parser().getParser()

@@ -151,7 +151,8 @@ def optimize_round(model, top_actions, top_actprobs, bot_actions, bot_actprobs, 
             tmp = calcBotFinalReward(top_actions[i], bot_actions[i], gold_labels, 0.)
             bot_cnt += len(tmp)
             bot_bias += np.sum(tmp)
-        bot_bias /= bot_cnt
+        if bot_cnt != 0:
+            bot_bias /= bot_cnt
     else:
         bot_bias = 0.
     loss = .0

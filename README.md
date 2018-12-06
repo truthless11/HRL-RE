@@ -1,9 +1,9 @@
 # HRL-RE
 Codes for the paper "A Hierarchical Framework for Relation Extraction with Reinforcement Learning"
 
-Cite this paper:
+Cite this paper [pdf](https://arxiv.org/abs/1811.03925) :
 ```
-@inproceedings{takanobu2018hierarchical
+@inproceedings{takanobu2019hierarchical
   title={A Hierarchical Framework for Relation Extraction with Reinforcement Learning},
   author={Takanobu, Ryuichi and Zhang, Tianyang and Liu, Jiexi and Huang, Minlie},
   booktitle={AAAI},
@@ -35,7 +35,7 @@ Each relational triple is formatted as follows:
 
 Command
 
-```python
+```
 cd code
 python main.py {--[option1]=[value1] --[option2]=[value2] ... }
 ```
