@@ -1,9 +1,9 @@
 # HRL-RE
-Codes for the paper "A Hierarchical Framework for Relation Extraction with Reinforcement Learning"
+Codes for the paper "A Hierarchical Framework for Relation Extraction with Reinforcement Learning", and you can find our paper at [arxiv](https://arxiv.org/abs/1811.03925)
 
-Cite this paper [pdf](https://arxiv.org/abs/1811.03925) :
+Cite this paper :
 ```
-@inproceedings{takanobu2019hierarchical
+@inproceedings{takanobu2019hierarchical,
   title={A Hierarchical Framework for Relation Extraction with Reinforcement Learning},
   author={Takanobu, Ryuichi and Zhang, Tianyang and Liu, Jiexi and Huang, Minlie},
   booktitle={AAAI},
@@ -60,7 +60,16 @@ parser.add_argument('--pretrain', type=bool, default=False, help="Set to True to
 parser.add_argument('--datapath', type=str, default='../data/NER10/', help="Data directory")
 parser.add_argument('--testfile', type=str, default='test', help="Filename of test file")
 ```
+NOTE: please start with pretraining, e.g.
+
+    python main.py --datapath ../data/NYT10/ --pretrain True
+
+then,
+
+    python main.py --lr 2e-5 --datapath ../data/NYT10/ --start checkpoints/model_HRL_10
+
+
 ## Requirements
 
 - python 3
-- pytorch >= 0.3
+- pytorch = 0.3 
