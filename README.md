@@ -7,6 +7,7 @@ Cite this paper :
   title={A Hierarchical Framework for Relation Extraction with Reinforcement Learning},
   author={Takanobu, Ryuichi and Zhang, Tianyang and Liu, Jiexi and Huang, Minlie},
   booktitle={AAAI},
+  pages={7072--7079},
   year={2019}
 }
 ```
@@ -57,10 +58,10 @@ parser.add_argument('--numprocess', type=int, default=4, help="Number of process
 parser.add_argument('--start', type=str, default='', help="Directory to load model")
 parser.add_argument('--test', type=bool, default=False, help="Set to True to inference")
 parser.add_argument('--pretrain', type=bool, default=False, help="Set to True to pretrain")
-parser.add_argument('--datapath', type=str, default='../data/NER10/', help="Data directory")
+parser.add_argument('--datapath', type=str, default='../data/NYT10/', help="Data directory")
 parser.add_argument('--testfile', type=str, default='test', help="Filename of test file")
 ```
-NOTE: please start with pretraining, e.g.
+**NOTE**: please start with pretraining, e.g.
 
     python main.py --datapath ../data/NYT10/ --pretrain True
 
